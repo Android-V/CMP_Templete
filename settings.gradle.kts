@@ -32,4 +32,8 @@ plugins {
     id("org.gradle.toolchains.foojay-resolver-convention") version "1.0.0"
 }
 
+include(":shared:data")
+include(":shared:domain")
+include(":shared:designSystem")
 include(":composeApp")
+include(":feature")
