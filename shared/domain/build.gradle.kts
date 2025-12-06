@@ -51,6 +51,8 @@ kotlin {
         }
     }
 
+    jvm("desktop")
+
     // Source set declarations.
     // Declaring a target automatically creates a source set with the same name. By default, the
     // Kotlin Gradle Plugin creates additional source sets that depend on each other, since it is
@@ -59,8 +61,7 @@ kotlin {
     sourceSets {
         commonMain {
             dependencies {
-                implementation(libs.kotlin.stdlib)
-                // Add KMP dependencies here
+                implementation(libs.kotlinx.coroutines.core)
             }
         }
 
@@ -93,6 +94,12 @@ kotlin {
                 // part of KMP’s default source set hierarchy. Note that this source set depends
                 // on common by default and will correctly pull the iOS artifacts of any
                 // KMP dependencies declared in commonMain.
+            }
+        }
+
+        val desktopMain by getting {
+            dependencies {
+                // JVM/desktop 전용 의존성 필요하면 여기
             }
         }
     }
