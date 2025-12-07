@@ -1,0 +1,19 @@
+package io.github.beombeom2.feature.onBoarding.navigation
+
+import androidx.navigation.NavGraphBuilder
+import androidx.navigation.compose.composable
+import kotlinx.serialization.Serializable
+
+@Serializable
+data object Onboarding
+
+
+fun NavGraphBuilder.onboardingNavGraph(
+    navigateToLogin: () -> Unit,
+) {
+    composable<Onboarding> {
+        OnboardingRoute(
+            navigateToLogin = navigateToLogin,
+        )
+    }
+}
