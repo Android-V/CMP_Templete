@@ -16,7 +16,7 @@ import java.io.IOException
 private val Context.appLaunchDataStore by preferencesDataStore(APP_LAUNCH_PREFS)
 private val KEY_FIRST_LAUNCH = booleanPreferencesKey(PREF_FIRST_LAUNCH)
 
-class AndroidAppLaunchLocalDataSource(
+class AndroidFirstLaunchLocalDataSource(
     private val context: Context
 ) : FirstLaunchLocalDataSource {
 

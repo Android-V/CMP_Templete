@@ -2,10 +2,13 @@ package io.github.beombeom2.cmp
 
 import androidx.compose.ui.window.Window
 import androidx.compose.ui.window.application
+import io.github.beombeom2.data.firstLaunch.di.desktopFirstLaunchModule
 import io.github.beombeom2.di.initKoin
 
 fun main()  {
-    initKoin()
+    initKoin{
+        modules(desktopFirstLaunchModule)
+    }
     application {
         Window(
             onCloseRequest = ::exitApplication,

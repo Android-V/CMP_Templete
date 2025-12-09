@@ -1,4 +1,4 @@
-package io.github.beombeom2.network
+package io.github.beombeom2.data.network
 
 import io.ktor.client.engine.HttpClientEngine
 import io.ktor.client.engine.okhttp.OkHttp
