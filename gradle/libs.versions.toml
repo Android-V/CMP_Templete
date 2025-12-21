@@ -1,4 +1,7 @@
 [versions]
+compileSdk = "36"
+minSdk = "26"
+
 agp = "8.13.1"
 android-compileSdk = "36"
 android-minSdk = "24"
@@ -81,6 +84,10 @@ compose-ui = { module = "org.jetbrains.compose.ui:ui", version.ref = "composeMul
 compose-material3 = { module = "org.jetbrains.compose.material3:material3", version.ref = "kmpMaterial3" }
 compose-resources = { module = "org.jetbrains.compose.components:components-resources", version.ref = "composeMultiplatform" }
 compose-ui-toolingPreview = { module = "org.jetbrains.compose.components:components-ui-tooling-preview", version.ref = "composeMultiplatform" }
+
+compose-ui-tooling = { module = "org.jetbrains.compose.ui:ui-tooling", version.ref = "composeMultiplatform" }
+
+jetbrains-compose-gradle-plugin = { module = "org.jetbrains.compose:compose-gradle-plugin", version.ref = "composeMultiplatform" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
