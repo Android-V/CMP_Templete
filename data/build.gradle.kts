@@ -47,7 +47,7 @@ kotlin {
             dependencies {
                 api(libs.koin.core)
                 implementation(libs.bundles.ktor)
-                implementation(project(":shared:domain"))
+                implementation(project(":domain"))
             }
         }
 

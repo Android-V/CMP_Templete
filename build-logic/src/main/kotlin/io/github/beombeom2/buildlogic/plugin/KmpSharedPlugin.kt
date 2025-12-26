@@ -1,4 +1,4 @@
-package io.github.beombeom2.plugin
+package io.github.beombeom2.buildlogic.plugin
 
 
 import org.gradle.api.Plugin
